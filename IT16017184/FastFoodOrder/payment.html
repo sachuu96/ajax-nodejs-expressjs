@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Food service</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Food service</a>
+            </div>
+            <!-- /.navbar-header -->
+
+
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i>Select Food</a>
+                        </li>
+                        <li>
+                            <a href="myOrders.html"><i class="fa fa-dashboard fa-fw"></i>My orders</a>
+                        </li>
+                        <li>
+                            <a href="payment.html"><i class="fa fa-dashboard fa-fw"></i>Payments</a>
+                        </li>
+                        <li>
+                            <a href="contest.html"><i class="fa fa-dashboard fa-fw"></i>Contest</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Payments</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+              <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Enter Customer Details
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form" id="form-customer">
+                                        <div class="form-group">
+                                            <label>Customer Name </label>
+                                            <input class="form-control" placeholder="Enter text" id="create-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Customer Address </label>
+                                            <input class="form-control" placeholder="Enter text" id="create-address">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Customer Username </label>
+                                            <input class="form-control" placeholder="Enter text" id="create-username">
+                                        </div>
+                                        <div class="form-group">
+                                            <label> Password </label>
+                                            <input class="form-control" placeholder="Enter text" id="create-password">
+                                        </div>
+                                        <button type="submit" class="btn btn-default" id="enter-customer">Add Details</button>
+                                    </form>
+                                </div>
+                            <div>
+                          </div>
+                    </div>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Select Payment Method
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#home" data-toggle="tab">Credit Card</a>
+                                </li>
+                                <li><a href="#profile" data-toggle="tab">Mobile Phone Number</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="home">
+                                    <div class="panel panel-default">
+
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form" id="credit-card-payment">
+                                        <div class="form-group">
+                                            <label>Credit Card Number</label>
+                                            <input class="form-control" placeholder="Enter text" id="ccn" disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Credit Holder's Name</label>
+                                            <input class="form-control" placeholder="Enter text" id="chn" disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>CVC Number</label>
+                                            <input class="form-control" placeholder="Enter text" id="cvc" disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input class="form-control" placeholder="Enter text" id="email" disabled>
+
+                                        </div>
+                                        <label>Amount</label>
+                                        <button id="get-amount">click to add</button>
+                                         <div class="form-group input-group">
+
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+                                        <button type="submit" class="btn btn-default disabled">Submit Button</button>
+                                        <button type="reset" class="btn btn-default disabled">Reset Button</button>
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+
+                                <!-- /.col-lg-6 (nested) -->
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+
+
+
+
+
+
+
+
+
+                                </div>
+                                <div class="tab-pane fade" id="profile">
+
+
+
+
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form" id="mobile-payment">
+                                        <div class="form-group">
+                                            <label>Mobile Number</label>
+                                            <input class="form-control" placeholder="Enter text" id="mn" disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>4 Digit Pin Number</label>
+                                            <input class="form-control" placeholder="Enter text" id="pn" disabled>
+                                        </div>
+                                        <label>Amount</label>
+
+                                        <button id="get-amount-phone">click to add</button>
+                                         <div class="form-group input-group">
+
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+                                        <button type="submit" class="btn btn-default disabled">Submit Button</button>
+                                        <button type="reset" class="btn btn-default disabled">Reset Button</button>
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+
+                                <!-- /.col-lg-6 (nested) -->
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                                </div>
+                </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+            </div>
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+    <script src="jquery.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
